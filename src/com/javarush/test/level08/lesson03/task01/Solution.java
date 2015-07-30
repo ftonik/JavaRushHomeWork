@@ -13,7 +13,7 @@ public class Solution
 {
     public static void main(String[] args) throws Exception {
         HashSet<String> fruits = new HashSet<String>();
-        fruits.add("арбуз");
+        fruits.add("арбуз");//
         fruits.add("банан");
         fruits.add("вишня");
         fruits.add("груша");
