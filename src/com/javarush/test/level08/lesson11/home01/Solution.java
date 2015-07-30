@@ -14,20 +14,16 @@ import java.util.Set;
 public class Solution {
     public static void main(String[] args) {
         Set<Cat> cats = createCats();
-
-        Iterator<Cat> catIterator = cats.iterator();
-        Cat catRemove=catIterator.next();
-        cats.remove(catRemove);
+        cats.remove(cats.iterator().next());
         printCats(cats);
     }
 
     public static Set<Cat> createCats() {
-        Set<Cat> catHashSet = new HashSet<Cat>();
-
+        Set<Cat> catsS = new HashSet<Cat>();
         for (int i = 0; i < 3; i++) {
-            catHashSet.add(new Cat());
+            catsS.add(new Cat());
         }
-        return catHashSet;
+        return catsS;
     }
 
     public static void printCats(Set<Cat> cats) {
@@ -38,8 +34,7 @@ public class Solution {
     }
 
     private static class Cat {
-
-
     }
 
+    // пункт 1
 }
