@@ -56,7 +56,11 @@ public class Solution {
 
         for ( String name : duplicateNames )
         {
-            removeItemFromMapByValue( map, name );
+            HashMap<String, String> copy = new HashMap<String, String>(map);
+            for (Map.Entry<String, String> pair : copy.entrySet()) {
+                if (pair.getValue().equals(name))
+                    map.remove(pair.getKey());
+            }
         }
     }
 
