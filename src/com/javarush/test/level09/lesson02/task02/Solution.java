@@ -12,7 +12,7 @@ public class Solution {
     public static String method1() {
         method2();
         StackTraceElement[] stackTraceElement = Thread.currentThread().getStackTrace();
-        System.out.println(stackTraceElement[8].getMethodName());
+        System.out.println(stackTraceElement[2].getMethodName());
         return stackTraceElement[2].getMethodName();
 
     }
